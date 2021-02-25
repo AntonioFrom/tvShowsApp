@@ -1,4 +1,3 @@
-
 package com.example.tvshowsapp.models;
 
 import com.google.gson.annotations.SerializedName;
@@ -64,3 +63,4 @@ public class ModelTvShowDetail {
         return mEpisodes;
     }
 }
+
