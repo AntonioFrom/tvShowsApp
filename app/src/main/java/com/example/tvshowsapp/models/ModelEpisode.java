@@ -4,6 +4,7 @@ import com.google.gson.annotations.SerializedName;
 
 public class ModelEpisode {
 
+
     @SerializedName("episode")
     private String mEpisode;
     @SerializedName("season")

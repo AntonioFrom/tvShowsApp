@@ -7,6 +7,7 @@ import java.util.List;
 
 public class ModelTvShowDetail {
 
+
     @SerializedName("url")
     private String mUrl;
 
