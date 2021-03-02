@@ -13,6 +13,6 @@ public interface ApiService {
     Call<ResponseTVShow> getMostPopularTVShow(@Query("page") int page);
 
     @GET("show-details")
-    Call<ResponseTVShowDetail> getTVShoeDetails(@Query("q") String tvShowId);
+    Call<ResponseTVShowDetail> getTVShowDetails(@Query("q") String tvShowId);
 
 }

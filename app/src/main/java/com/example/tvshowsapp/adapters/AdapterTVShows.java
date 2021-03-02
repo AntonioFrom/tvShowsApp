@@ -14,13 +14,13 @@ import com.example.tvshowsapp.models.ModelTvShow;
 
 import java.util.List;
 
-public class AdaptersTVShows extends RecyclerView.Adapter<AdaptersTVShows.TVShowViewHolder>{
+public class AdapterTVShows extends RecyclerView.Adapter<AdapterTVShows.TVShowViewHolder>{
 
     private List<ModelTvShow> tvShows;
     private LayoutInflater layoutInflater;
     private ListenerTVShow listenerTVShow;
 
-    public AdaptersTVShows(List<ModelTvShow> tvShows, ListenerTVShow listenerTVShow) {
+    public AdapterTVShows(List<ModelTvShow> tvShows, ListenerTVShow listenerTVShow) {
         this.tvShows = tvShows;
         this.listenerTVShow = listenerTVShow;
     }

@@ -22,7 +22,7 @@ public class RepositoryTVShowDetail {
 
     public LiveData<ResponseTVShowDetail> getTVShowDetails(String tvShowId) {
         MutableLiveData<ResponseTVShowDetail> data = new MutableLiveData<>();
-        apiService.getTVShoeDetails(tvShowId).enqueue(new Callback<ResponseTVShowDetail>() {
+        apiService.getTVShowDetails(tvShowId).enqueue(new Callback<ResponseTVShowDetail>() {
             @Override
             public void onResponse(@NonNull Call<ResponseTVShowDetail> call, @NonNull Response<ResponseTVShowDetail> response) {
                 data.setValue(response.body());
