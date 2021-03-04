@@ -22,6 +22,9 @@ public interface TVShowDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     Completable addToWatchList(ModelTvShow tvShow);
 
- //   @Delete
-//    void removeFromWatchList ();
+    @Delete
+    Completable removeFromWatchList(ModelTvShow tvShow);
+
+    @Query("SELECT * FROM tvShows WHERE mId =:tvShowId")
+    Flowable<ModelTvShow> getTVShowFromWatchlist (String tvShowId);
 }
