@@ -2,6 +2,7 @@ package com.example.tvshowsapp.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -52,6 +53,8 @@ public class MainActivity extends AppCompatActivity implements ListenerTVShow {
                 }
             }
         });
+        activityMainBinding.imageWatchList.setOnClickListener(v ->
+                startActivity(new Intent(getApplicationContext(),WatchListActivity.class)));
         getMostPopularTVShows();
     }
 

@@ -1,16 +1,13 @@
 package com.example.tvshowsapp.viewmodels;
 
 import android.app.Application;
-
 import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
-
 import com.example.tvshowsapp.database.DatabaseTVShows;
 import com.example.tvshowsapp.models.ModelTvShow;
 import com.example.tvshowsapp.repositories.RepositoryTVShowDetail;
 import com.example.tvshowsapp.response.ResponseTVShowDetail;
-
 import io.reactivex.Completable;
 
 public class ViewModelTVShowDetail extends AndroidViewModel {
